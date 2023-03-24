@@ -1,0 +1,113 @@
+.programs {
+  max-width: 1232px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 60px 104px 96px;
+  position: relative;
+}
+
+.title {
+  font-family: 'Sreda';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 125%;
+  color: var(--Gradation-700);
+  margin: 0;
+  text-align: center;
+}
+
+.square {
+  width: 320px;
+  height: 320px;
+  background: #164F64;
+  position: absolute;
+  right: 44px;
+  bottom: 40px;
+  transform: rotate(10deg);
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.img {
+  width: 320px;
+  height: 320px;
+  border-radius: 5px;
+  display: block;
+  transform: rotate(5deg);
+  border: 1px solid var(--Cyan-300);
+  z-index: 1;
+}
+
+.button {
+  width: 206px;
+  height: 100%;
+  padding: 16px;
+  margin-top: 35px;
+  margin-bottom: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Orange-300);
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--Gradation-100);
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--Orange-200);
+	border-color: var(--Highlight-Light);
+}
+
+
+.button:disabled {
+  background: var(--Gradation-300);
+  cursor: default;
+  box-shadow: none;
+}
+
+@media(max-width: 1200px) {
+  .square {
+    width: 270px;
+    height: 270px;
+  }
+
+  .img {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@media(max-width: 1100px) {
+  .square {
+    width: 250px;
+    height: 250px;
+  }
+
+  .img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media(max-width: 840px) {
+
+  .programs {
+    padding-bottom: 64px;
+  }
+}
+
+@media(max-width: 500px) {
+
+  .programs {
+    margin: 0 16px;
+    padding: 0;
+  }
+}

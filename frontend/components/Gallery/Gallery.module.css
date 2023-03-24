@@ -1,0 +1,48 @@
+.slider_container {
+  max-width: 1440px;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery_title {
+  font-family: "Sreda";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 125%;
+  color: var(--Cyan-300);
+  margin: calc(100vh * 0.11) 0 calc(100vh * 0.053) 0;
+}
+
+@media screen and (min-width: 0) {
+  .gallery_title {
+    margin: 40px 0;
+  }
+  .slider_container {
+    margin: 0 auto 140px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .gallery_title {
+    margin: 80px 0 50px;
+  }
+  
+  .slider_container {
+    margin-bottom: 135px;
+    max-width: 800px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .gallery_title {
+    margin: 40px 0; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slider_container {
+    margin-bottom: 100px;
+  }
+}

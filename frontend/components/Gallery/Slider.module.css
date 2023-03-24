@@ -1,0 +1,202 @@
+.wrapper {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  max-width: 1280px;
+  width: 100%;
+  height: 680px;
+  margin: 0 auto;
+  filter: drop-shadow(15px 20px 25px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+}
+
+.slide {
+  border-radius: 20px;
+  position: relative;
+  object-fit: cover;
+}
+
+.slider {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.btn {
+  width: 90px;
+  height: 90px;
+  background: #E75D22;
+  border: 0;
+  border-radius: 100%;
+  cursor: pointer;
+  background-image: url(../../images/arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  transform: translateY(-50%);
+  transition: .2s;
+}
+
+.btn:hover {
+  opacity: .7;
+}
+
+.btn_left {
+  top: 50%;
+  left: -45px;
+  transform: rotate(180deg);
+}
+
+.btn_right {
+  transform: translateY(0);
+  top: 50%;
+  right: -45px;
+  left: auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .btn_left {
+    left: 15px;
+  }
+
+  .btn_right {
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .wrapper {
+    max-width: 900px;
+    width: 100%;
+    height: 500px;
+  }
+
+  .slide{
+    width: 800px;
+    height: 500px;
+  }
+
+  .btn_left {
+    left: 0;
+  }
+
+  .btn_right {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .wrapper {
+    height: 500px;
+  }
+  .slide {
+    max-width: 700px;
+    height: 500px;
+  }
+
+  .btn_left {
+    left: 50px;
+  }
+
+  .btn_right {
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .wrapper {
+    height: 400px;
+  }
+  .slide {
+    max-width: 600px;
+    height: 400px;
+  }
+
+  .btn_left {
+    left: 50px;
+  }
+
+  .btn_right {
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .btn_left {
+    left: 0;
+  }
+
+  .btn_right {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    height: 300px;
+  }
+  .slide {
+    max-width: 500px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    height: 250px;
+  }
+  .slide {
+    max-width: 350px;
+    height: 250px;
+  }
+
+  .btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .btn_left {
+    left: 35%;
+    top: 270px;
+  }
+
+  .btn_right {
+    right: 35%;
+    top: 270px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .wrapper {
+    height: 170px;
+  }
+  .slide {
+    max-width: 270px;
+    height: 170px;
+  }
+
+  .btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn_left {
+    left: 35%;
+    top: 190px;
+  }
+
+  .btn_right {
+    right: 35%;
+    top: 190px;
+  }
+}
