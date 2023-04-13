@@ -50,11 +50,6 @@ function Promo() {
             <Image src={photo3} width='40' height='40' alt="Фото 3" className={styles.image} />
             особенный
           </h1>
-          <p className={styles.subtitle}>
-            Lorem ipsum dolor sit amet consectetur. Massa sit a malesuada
-            venenatis lacinia. Viverra id leo viverra egestas purus. Gravida
-            fermentum vitae sagittis sapien consectetur pellentesque.
-          </p>
         </>
       ) : (
         <>

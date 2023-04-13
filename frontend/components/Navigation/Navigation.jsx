@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/Image';
+import Image from 'next/image';
 import navArrow from '../../images/nav__arrow.svg';
 import styles from './Navigation.module.css';
 
